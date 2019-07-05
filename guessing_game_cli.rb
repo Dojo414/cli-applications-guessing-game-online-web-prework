@@ -1,5 +1,5 @@
 def run_guessing_game
-  number = rand(6) + 1
+  number = (rand(6) + 1).to_s
   guess = gets.chomp
   if guess === number
     puts "You guessed the correct number!"
